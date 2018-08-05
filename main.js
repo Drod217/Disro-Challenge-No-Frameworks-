@@ -17,7 +17,7 @@ var hamburger = document.querySelector(".hamburger");
 hamburger.addEventListener("click", function(e) {
   if (document.querySelector(".left-box").style.display === "none") {
     document.querySelector(".left-box").style =
-      "display: block; width: 100%; height: 14vh; margin-bottom:3vh;";
+      "display: block; width: 100%; height: 18vh; margin-bottom:3vh;";
   } else {
     document.querySelector(".left-box").style.display = "none";
   }
