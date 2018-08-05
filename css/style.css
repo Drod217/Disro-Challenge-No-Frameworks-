@@ -45,6 +45,7 @@ html {
   color: white;
   display: block;
   width: 15vw;
+  font-weight: 700;
   font-size: 1vw;
   background-color: #5d8;
   border: none;
@@ -57,7 +58,10 @@ html {
   font-size: 1vw;
   text-align: center;
 }
-
+#space {
+  font-weight: 900;
+  word-spacing: -4px;
+}
 .profile {
   display: block;
   width: 5vw;
@@ -162,6 +166,9 @@ html {
 }
 .card-column {
   float: none;
+}
+.money {
+  font-weight: 900;
 }
 @media only screen and (max-width: 1024px) {
   .balance,
