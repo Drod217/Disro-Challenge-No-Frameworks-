@@ -19,6 +19,9 @@ html {
   width: 100vw;
   clear: both;
 }
+#balance-size {
+  font-size: .7vw;
+}
 
 .blank,
 .nav-funds,
@@ -59,7 +62,9 @@ html {
   text-align: center;
 }
 #space {
+  margin-top: 10px;
   font-weight: 900;
+  font-size: 1.2vw;
   word-spacing: -4px;
 }
 .profile {
@@ -184,45 +189,130 @@ html {
   }
 }
 @media only screen and (max-width: 591px) {
-  .left-box,
   .dropdown,
-  .dropbtn,
-  .pvp,
-  .balance {
+  .dropbtn {
+    margin-bottom: -4px;
+    margin-top: 11vh;
+    margin-right: 5px;
     display: block;
     float: none;
-    width: 100%;
+    width: 99.5%;
     height: 100%;
     font-size: 2.5vh;
+  }
+  .balance {
+    float: left;
+    width: 82vw;
+    height: 10vh;
+    font-size: 5.5vw;
+    font-weight: 900;
+    text-align: justify;
   }
   #icons {
     width: 5%;
   }
+  #space {
+    text-align: center;
+    font-size: 3vw;
+    margin-top: 10px;
+    margin-left: 240px;
+  }
+  #balance-size {
+    margin-top: 10px;
+    font-size: 2.7vw;
+  }
 }
 @media only screen and (max-width: 591px) {
-  .blank {
+  .left-box,
+  .blank,
+  .funds,
+  .pvp,
+  .nav-funds {
     display: none;
   }
 }
-
+@media only screen and (max-width: 591px) {
+  .hamburger {
+  display: hidden;
+}
 @media only screen and (max-width: 591px) {
   #picture,
   .profile {
-    width: 100%;
-    height: 100%;
+    float: right;
+    width: 18vw;
+    height: 10vh;
+    box-shadow: 0px 3px 15px 0px #ccc;
   }
 }
 
 @media only screen and (max-width: 591px) {
   .card {
-    width: 100%;
-    height: 100%;
+    float: left;
+    margin-left: 5vw;
+    width: 41%;
+    height: auto;
   }
-  .container,
-  .funds,
-  .nav-funds {
+  .container {
     font-size: 2.5vh;
     height: 12vh;
     width: 100%;
   }
+}
+@media only screen and (max-width: 413px) and (min-width: 411px) {
+  .card {
+    float: left;
+    margin-left: 9vw;
+    width: 35%;
+    height: auto;
+  }
+  .container {
+    font-size: 2.5vh;
+    height: 12vh;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 414px) and (min-width: 411px) {
+  .card {
+    float: left;
+    margin-left: 15vw;
+    width: 28%;
+    height: auto;
+  }
+  .container {
+    font-size: 2.1vh;
+    height: 12vh;
+    width: 100%;
+  }
+}
+
+.hamburger {
+  size: 80%;
+  padding: 4vw;
+  float: left;
+  cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
 }
