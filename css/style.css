@@ -130,12 +130,12 @@ html {
   display: block;
 }
 
-.dropdown:hover .dropbtn {
-  background-color: #3e8e41;
-}
 #icons {
   width: 1vw;
   height: 1.5vh;
+}
+.arrowdown {
+  float: right;
 }
 .card {
   width: 15vw;
