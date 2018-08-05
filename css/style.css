@@ -71,11 +71,12 @@ html {
   width: 5vw;
 }
 #pvp-icon {
+  height: 90%;
   width: 70%;
 }
 
 .left-box {
-  font-size: 1vw;
+  font-size: 1.5vw;
   float: left;
   text-align: left;
   background-color: #223;
@@ -86,6 +87,7 @@ html {
   border-top: solid 3px #334;
 }
 .dropbtn {
+  text-align: left;
   width: 23vw;
   margin-top: 1.5vh;
   margin-left: 0.4vw;
@@ -171,6 +173,7 @@ html {
   font-weight: 900;
 }
 @media only screen and (max-width: 1024px) {
+  .dropbtn,
   .balance,
   .nav-funds,
   .container {
